@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog.apps.BlogConfig', #Menambahkan Aplikasi Blog. Format nama, apps, dan class yang berada di apps.py
 ]
 
 MIDDLEWARE = [

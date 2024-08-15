@@ -10,4 +10,4 @@ def index1(request): #Mendefinisikan Index
     return render(request, 'index.html')
 
 def blog(request):
-    return HttpResponse("<h1>Ini adalah halamam BLog</h1>")
+    return HttpResponse("<h1>Ini adalah halamam mmmBLog</h1>")

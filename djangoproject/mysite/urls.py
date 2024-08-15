@@ -19,9 +19,12 @@ from django.urls import path
 
 #from . views import index, blog #Import Package dari file VIews
 from .views import *
-
+from blog import views as blogviews #mengimport file views.py di folder blog sebagai blogviews.
+from kontak import views as kontakviews
 
 urlpatterns = [  
+    path('blog/', blogviews.index),
+    path('kontak/', kontakviews.index),
     path('', index1),  #Merouting halaman index yang telah dibuat
     path('blog/',blog),
     path('admin/', admin.site.urls),
